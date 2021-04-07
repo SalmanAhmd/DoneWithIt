@@ -2,6 +2,7 @@ import React from 'react'
 import { Image, ImageBackground, StyleSheet, Text, View } from 'react-native'
 
 export default function WelcomeScreen() {
+
   return (
     <ImageBackground
       style={styles.background}
@@ -16,7 +17,7 @@ export default function WelcomeScreen() {
           height: 150,
           uri: 'https://1000logos.net/wp-content/uploads/2018/05/Gmail-logo.png'
         }} />
-        <Text>Sell What You Don't Need</Text>
+        <Text style={styles.text}>Sell What You Don't Need</Text>
       </View>
       <View style={styles.loginButton}></View>
       <View style={styles.registerButton}></View>
@@ -44,6 +45,10 @@ const styles = StyleSheet.create({
     width: '100%',
     height: 70,
     backgroundColor: '#4ecdc4'
+  },
+  text:{
+    color: '#fefefe',
+    fontSize: 20
   },
   logo: {
     // position: 'absolute',
