@@ -1,10 +1,12 @@
 import React from 'react'
-import { Image, ImageBackground, StyleSheet, Text, View } from 'react-native'
+import { Image, ImageBackground, StyleSheet, View, Text } from 'react-native'
+import { AppButton } from '../components'
 
 export default function WelcomeScreen() {
 
   return (
     <ImageBackground
+      blurRadius={5}
       style={styles.background}
       source={{
         width: 480,
@@ -17,10 +19,12 @@ export default function WelcomeScreen() {
           height: 150,
           uri: 'https://1000logos.net/wp-content/uploads/2018/05/Gmail-logo.png'
         }} />
-        <Text style={styles.text}>Sell What You Don't Need</Text>
+        <Text style={styles.tagline}>Sell What You Don't Need</Text>
       </View>
-      <View style={styles.loginButton}></View>
-      <View style={styles.registerButton}></View>
+      <View style={styles.buttonContainer}>
+        <AppButton title='Login' />
+        <AppButton title='Register' color='secondary' />
+      </View>
     </ImageBackground >
   )
 }
@@ -36,23 +40,18 @@ const styles = StyleSheet.create({
     top: 100,
     alignItems: 'center'
   },
-  loginButton: {
-    width: '100%',
-    height: 70,
-    backgroundColor: '#fc5c65'
+  buttonContainer: {
+    padding: 20,
+    width: '100%'
   },
-  registerButton: {
-    width: '100%',
-    height: 70,
-    backgroundColor: '#4ecdc4'
-  },
-  text:{
+  tagline: {
+    fontSize: 25,
+    fontWeight: 'bold',
+    paddingVertical: 20,
     color: '#fefefe',
-    fontSize: 20
   },
   logo: {
     // position: 'absolute',
     // top: 100
   }
 })
-
