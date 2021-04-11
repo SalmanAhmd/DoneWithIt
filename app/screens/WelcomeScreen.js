@@ -48,7 +48,8 @@ const styles = StyleSheet.create({
   },
   text:{
     color: '#fefefe',
-    fontSize: 20
+    fontSize: 20,
+    // fontWeight: '600'
   },
   logo: {
     // position: 'absolute',
