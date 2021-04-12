@@ -1,20 +1,22 @@
 import React from 'react';
-import { Card } from './app/components';
 
-import WelcomeScreen from './app/screens/WelcomeScreen';
-// import ViewImageScreen from './app/screens/ViewImageScreen';
-
+import {
+  // WelcomeScreen,
+  ViewImageScreen,
+  // ListingDetail
+} from './app/screens';
 
 export default function App() {
 
   return (
     <>
       {/* <WelcomeScreen /> */}
-      {/* <ViewImageScreen /> */}
-      <Card
+      <ViewImageScreen />
+      {/* <Card
         title='Red Jacket'
         subTitle='$200'
-        image={require('./app/assets/jacket.jpg')} />
+        image={require('./app/assets/jacket.jpg')} /> */}
+      {/* <ListingDetail /> */}
     </>
   );
 }
