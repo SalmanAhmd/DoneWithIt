@@ -1,10 +1,10 @@
 import React from 'react'
 import { StyleSheet, SafeAreaView, Platform, StatusBar } from 'react-native'
 
-export default function Screen({ child }) {
+export default function Screen({ children }) {
   return (
     <SafeAreaView style={styles.screen}>
-      {child}
+      {children}
     </SafeAreaView>
   )
 }
