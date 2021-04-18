@@ -1,5 +1,5 @@
 import React from 'react'
-import { FlatList } from 'react-native'
+import { FlatList, View } from 'react-native'
 
 import { ListItem, Screen } from '../components'
 
@@ -12,6 +12,12 @@ const messages = [
   },
   {
     id: 2,
+    title: 'T2',
+    description: 'D2',
+    image: require('../assets/profile.jpg')
+  },
+  {
+    id:3,
     title: 'T2',
     description: 'D2',
     image: require('../assets/profile.jpg')
@@ -28,7 +34,13 @@ export default function MessagesScreen() {
           <ListItem
             title={item.title}
             subTitle={item.description}
-            image={item.image} />} />
+            image={item.image} />}
+        ItemSeparatorComponent={() =>
+          <View style={{
+            width: '100%',
+            height: 5 ,
+            backgroundColor: '#000'
+          }} />} />
     </Screen>
   )
 }

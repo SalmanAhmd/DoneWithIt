@@ -1,5 +1,5 @@
 import React from 'react'
-import { StyleSheet, SafeAreaView } from 'react-native'
+import { StyleSheet, SafeAreaView, Platform, StatusBar } from 'react-native'
 
 export default function Screen({ child }) {
   return (
