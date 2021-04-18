@@ -2,8 +2,9 @@ import React from 'react';
 
 import {
   // WelcomeScreen,
-  ViewImageScreen,
-  // ListingDetail
+  // ViewImageScreen,
+  // ListingDetail,
+  MessagesScreen
 } from './app/screens';
 
 export default function App() {
@@ -11,12 +12,13 @@ export default function App() {
   return (
     <>
       {/* <WelcomeScreen /> */}
-      <ViewImageScreen />
+      {/* <ViewImageScreen /> */}
       {/* <Card
         title='Red Jacket'
         subTitle='$200'
         image={require('./app/assets/jacket.jpg')} /> */}
       {/* <ListingDetail /> */}
+      <MessagesScreen />
     </>
   );
 }
