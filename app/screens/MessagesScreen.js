@@ -16,18 +16,13 @@ const initialMessages = [
     title: 'T2',
     description: 'D2',
     image: require('../assets/profile.jpg')
-  },
-  {
-    id: 3,
-    title: 'T3',
-    description: 'D3',
-    image: require('../assets/profile.jpg')
   }
 ]
 
 export default function MessagesScreen() {
 
   const [messages, setMessages] = useState(initialMessages)
+  const [refreshing, setRefreshing] = useState(false)
 
   const handleDelete = message => {
     // Delete Message
@@ -46,7 +41,18 @@ export default function MessagesScreen() {
             onPress={() => console.log('Message selected', item)}
             renderRightActions={() =>
               <ListItemDeleteAction onPress={() => handleDelete(item)} />} />}
-        ItemSeparatorComponent={ListItemSeparator} />
+        ItemSeparatorComponent={ListItemSeparator}
+        refreshing={refreshing}
+        onRefresh={() => setMessages(prev => [
+          ...prev,
+          {
+            id: 3,
+            title: 'T3',
+            description: 'D3',
+            image: require('../assets/profile.jpg')
+          }
+        ])}
+      />
     </Screen>
   )
 }
