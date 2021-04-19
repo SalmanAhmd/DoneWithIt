@@ -5,6 +5,7 @@ import ListItem from './ListItem'
 import Screen from './Screen'
 import ListItemSeparator from './ListItemSeparator'
 import ListItemDeleteAction from './ListItemDeleteAction'
+import Icon from './Icon'
 
 export {
   AppText,
@@ -13,5 +14,6 @@ export {
   ListItem,
   Screen,
   ListItemSeparator,
-  ListItemDeleteAction
+  ListItemDeleteAction,
+  Icon
 }

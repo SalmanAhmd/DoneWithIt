@@ -7,6 +7,8 @@ import {
   MessagesScreen
 } from './app/screens';
 
+import { Screen, Icon } from './app/components'
+
 export default function App() {
 
   return (
@@ -18,7 +20,15 @@ export default function App() {
         subTitle='$200'
         image={require('./app/assets/jacket.jpg')} /> */}
       {/* <ListingDetail /> */}
-      <MessagesScreen />
+      {/* <MessagesScreen /> */}
+      <Screen>
+        <Icon
+          name='email'
+          size={50}
+          backgroundColor='red'
+          iconColor='white' />
+
+      </Screen>
     </>
   );
 }
