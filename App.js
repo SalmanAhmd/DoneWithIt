@@ -4,7 +4,8 @@ import {
   // WelcomeScreen,
   // ViewImageScreen,
   // ListingDetail,
-  MessagesScreen
+  // MessagesScreen,
+  AccountScreen
 } from './app/screens';
 
 import { Screen, Icon, ListItem } from './app/components'
@@ -21,12 +22,8 @@ export default function App() {
         image={require('./app/assets/jacket.jpg')} /> */}
       {/* <ListingDetail /> */}
       {/* <MessagesScreen /> */}
-      <Screen>
-        {/* <Icon
-          name='email'
-          size={50}
-          backgroundColor='red'
-          iconColor='white' /> */}
+      <AccountScreen />
+      {/* <Screen>
         <ListItem
           title='My Title'
           subTitle='My subtitle'
@@ -35,7 +32,7 @@ export default function App() {
             size={50}
             backgroundColor='red'
             iconColor='white' />} />
-      </Screen>
+      </Screen> */}
     </>
   );
 }
