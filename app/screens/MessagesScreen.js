@@ -1,8 +1,7 @@
 import React, { useState } from 'react'
 import { FlatList } from 'react-native'
 
-import { ListItem, Screen, ListItemSeparator } from '../components'
-import ListItemDeleteAction from '../components/ListItemDeleteAction'
+import { ListItem, Screen, ListItemSeparator, ListItemDeleteAction } from '../components'
 
 const initialMessages = [
   {
