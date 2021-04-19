@@ -7,7 +7,7 @@ import {
   MessagesScreen
 } from './app/screens';
 
-import { Screen, Icon } from './app/components'
+import { Screen, Icon, ListItem } from './app/components'
 
 export default function App() {
 
@@ -22,12 +22,19 @@ export default function App() {
       {/* <ListingDetail /> */}
       {/* <MessagesScreen /> */}
       <Screen>
-        <Icon
+        {/* <Icon
           name='email'
           size={50}
           backgroundColor='red'
-          iconColor='white' />
-
+          iconColor='white' /> */}
+        <ListItem
+          title='My Title'
+          subTitle='My subtitle'
+          ImageComponent={<Icon
+            name='email'
+            size={50}
+            backgroundColor='red'
+            iconColor='white' />} />
       </Screen>
     </>
   );
