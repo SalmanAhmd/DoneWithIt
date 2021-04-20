@@ -6,7 +6,7 @@ import colors from '../config/colors'
 import { AppText, PickerItem, Screen } from '.'
 
 export default function AppPicker({
-  icon, placeholder, items
+  icon, placeholder, items, selectedItem, onSelectItem
 }) {
   const [modalVisible, setModalVisible] = useState(false)
 
@@ -19,7 +19,7 @@ export default function AppPicker({
             size={22}
             color={colors.medium}
             style={styles.icon} />}
-          <AppText style={styles.text} >{placeholder}</AppText>
+          <AppText style={styles.text} >{selectedItem ? selectedItem.label : placeholder}</AppText>
           {icon && <MaterialCommunityIcons
             name={'chevron-down'}
             size={22}
@@ -36,7 +36,10 @@ export default function AppPicker({
             renderItem={({ item }) =>
               <PickerItem
                 label={item.label}
-                onPress={() => console.log(item)} />} />
+                onPress={() => {
+                  setModalVisible(false)
+                  onSelectItem(item)
+                }} />} />
         </Screen>
       </Modal>
     </>

@@ -30,6 +30,7 @@ export default function App() {
 
   // const [firstName, setFirstName] = useState('')
   // const [isNew, setIsNew] = useState(false)
+  const [category, setCategory] = useState(categories[0])
 
   return (
     <>
@@ -73,7 +74,8 @@ export default function App() {
         {/* <Switch
           value={isNew}
           onValueChange={newValue => setIsNew(newValue)} /> */}
-        <AppPicker items={categories} placeholder='Category' icon='apps' />
+        <AppPicker selectedItem={category}
+          onSelectItem={item => setCategory(item)} items={categories} placeholder='Category' icon='apps' />
         <AppTextInput placeholder='Email' icon='email' />
       </Screen>
     </>
