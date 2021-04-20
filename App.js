@@ -10,6 +10,7 @@ import {
 } from './app/screens';
 
 import {
+  AppTextInput,
   Screen,
   // Icon,
   // ListItem
@@ -45,7 +46,7 @@ export default function App() {
 
       {/* Input Components */}
       <Screen>
-        <Text>{firstName}</Text>
+        {/* <Text>{firstName}</Text>
         <TextInput
           maxLength={5}
           keyboardType='numeric'
@@ -55,7 +56,10 @@ export default function App() {
             borderBottomColor: '#ccc',
             borderBottomWidth: 1
           }}
-        />
+        /> */}
+        <AppTextInput 
+        placeholder="User Name"
+        icon='email' />
       </Screen>
     </>
   );
