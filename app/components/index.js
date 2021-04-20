@@ -8,7 +8,7 @@ import ListItemDeleteAction from './ListItemDeleteAction'
 import Icon from './Icon'
 import AppTextInput from './AppTextInput'
 import AppPicker from './AppPicker'
-
+import PickerItem from './PickerItem'
 
 export {
   AppText,
@@ -20,5 +20,6 @@ export {
   ListItemDeleteAction,
   Icon,
   AppTextInput,
-  AppPicker
+  AppPicker,
+  PickerItem
 }

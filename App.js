@@ -19,6 +19,13 @@ import {
 } from './app/components'
 // import { TextInput, Text, Switch } from 'react-native';
 
+
+const categories = [
+  { label: 'Furniture', value: 1 },
+  { label: 'Food', value: 2 },
+  { label: 'Clothes', value: 3 },
+]
+
 export default function App() {
 
   // const [firstName, setFirstName] = useState('')
@@ -66,7 +73,7 @@ export default function App() {
         {/* <Switch
           value={isNew}
           onValueChange={newValue => setIsNew(newValue)} /> */}
-        <AppPicker placeholder='Category' icon='apps' />
+        <AppPicker items={categories} placeholder='Category' icon='apps' />
         <AppTextInput placeholder='Email' icon='email' />
       </Screen>
     </>
