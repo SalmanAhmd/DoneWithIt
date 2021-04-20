@@ -1,7 +1,9 @@
 import React from 'react'
 import { Platform, StyleSheet, TextInput, View } from 'react-native'
 import { MaterialCommunityIcons } from '@expo/vector-icons'
+
 import colors from '../config/colors'
+import defaultStyles from '../config/styles'
 
 export default function AppTextInput({
   icon, ...otherProps
@@ -15,7 +17,7 @@ export default function AppTextInput({
         style={styles.icon} />}
       <TextInput
         {...otherProps}
-        style={styles.textInput}
+        style={defaultStyles.textI}
       />
     </View>
   )
@@ -32,10 +34,5 @@ const styles = StyleSheet.create({
   },
   icon: {
     marginRight: 10
-  },
-  textInput: {
-    fontSize: 18,
-    fontFamily: Platform.OS === 'android' ? 'Roboto' : 'Avenir',
-    color: colors.dark
   }
 })
