@@ -10,17 +10,19 @@ import {
 } from './app/screens';
 
 import {
+  // AppText,
   AppTextInput,
   Screen,
+  AppPicker,
   // Icon,
   // ListItem
 } from './app/components'
-import { TextInput, Text, Switch } from 'react-native';
+// import { TextInput, Text, Switch } from 'react-native';
 
 export default function App() {
 
   // const [firstName, setFirstName] = useState('')
-  const [isNew, setIsNew] = useState(false)
+  // const [isNew, setIsNew] = useState(false)
 
   return (
     <>
@@ -61,9 +63,11 @@ export default function App() {
         {/* <AppTextInput 
         placeholder="User Name"
         icon='email' /> */}
-        <Switch
+        {/* <Switch
           value={isNew}
-          onValueChange={newValue => setIsNew(newValue)} />
+          onValueChange={newValue => setIsNew(newValue)} /> */}
+        <AppPicker placeholder='Category' icon='apps' />
+        <AppTextInput placeholder='Email' icon='email' />
       </Screen>
     </>
   );

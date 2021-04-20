@@ -7,6 +7,8 @@ import ListItemSeparator from './ListItemSeparator'
 import ListItemDeleteAction from './ListItemDeleteAction'
 import Icon from './Icon'
 import AppTextInput from './AppTextInput'
+import AppPicker from './AppPicker'
+
 
 export {
   AppText,
@@ -17,5 +19,6 @@ export {
   ListItemSeparator,
   ListItemDeleteAction,
   Icon,
-  AppTextInput
+  AppTextInput,
+  AppPicker
 }
