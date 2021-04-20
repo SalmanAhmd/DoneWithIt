@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import {
   // WelcomeScreen,
@@ -6,12 +6,19 @@ import {
   // ListingDetail,
   // MessagesScreen,
   // AccountScreen
-  ListingScreen
+  // ListingScreen
 } from './app/screens';
 
-import { Screen, Icon, ListItem } from './app/components'
+import {
+  Screen,
+  // Icon,
+  // ListItem
+} from './app/components'
+import { TextInput, Text } from 'react-native';
 
 export default function App() {
+
+  const [firstName, setFirstName] = useState('')
 
   return (
     <>
@@ -24,7 +31,7 @@ export default function App() {
       {/* <ListingDetail /> */}
       {/* <MessagesScreen /> */}
       {/* <AccountScreen /> */}
-      <ListingScreen />
+      {/* <ListingScreen /> */}
       {/* <Screen>
         <ListItem
           title='My Title'
@@ -35,6 +42,21 @@ export default function App() {
             backgroundColor='red'
             iconColor='white' />} />
       </Screen> */}
+
+      {/* Input Components */}
+      <Screen>
+        <Text>{firstName}</Text>
+        <TextInput
+          maxLength={5}
+          keyboardType='numeric'
+          placeholder=" First Name"
+          onChangeText={text => setFirstName(text)}
+          style={{
+            borderBottomColor: '#ccc',
+            borderBottomWidth: 1
+          }}
+        />
+      </Screen>
     </>
   );
 }
