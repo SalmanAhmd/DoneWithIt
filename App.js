@@ -5,7 +5,8 @@ import {
   // ViewImageScreen,
   // ListingDetail,
   // MessagesScreen,
-  AccountScreen
+  // AccountScreen
+  ListingScreen
 } from './app/screens';
 
 import { Screen, Icon, ListItem } from './app/components'
@@ -22,7 +23,8 @@ export default function App() {
         image={require('./app/assets/jacket.jpg')} /> */}
       {/* <ListingDetail /> */}
       {/* <MessagesScreen /> */}
-      <AccountScreen />
+      {/* <AccountScreen /> */}
+      <ListingScreen />
       {/* <Screen>
         <ListItem
           title='My Title'
