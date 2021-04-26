@@ -10,6 +10,7 @@ import AppTextInput from './AppTextInput'
 import AppPicker from './AppPicker'
 import PickerItem from './PickerItem'
 import ErrorMessage from './ErrorMessage'
+import AppFormField from './AppFormField'
 
 export {
   AppText,
@@ -23,5 +24,6 @@ export {
   AppTextInput,
   AppPicker,
   PickerItem,
-  ErrorMessage
+  ErrorMessage,
+  AppFormField
 }
