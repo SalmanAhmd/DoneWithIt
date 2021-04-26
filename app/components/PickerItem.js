@@ -1,8 +1,8 @@
 import React from 'react'
 import { StyleSheet, TouchableOpacity } from 'react-native'
-import { AppText } from '.'
+import AppText from './AppText'
 
-export default function PickerItem({ label, onPress }) {
+export default function PickerItem({ label = 'label', onPress = () => { } }) {
   return (
     <TouchableOpacity onPress={onPress}>
       <AppText style={styles.text}>{label}</AppText>

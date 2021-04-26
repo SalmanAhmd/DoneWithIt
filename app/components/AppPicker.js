@@ -3,7 +3,9 @@ import { StyleSheet, View, TouchableWithoutFeedback, Modal, Button, FlatList } f
 import { MaterialCommunityIcons } from '@expo/vector-icons'
 
 import colors from '../config/colors'
-import { AppText, PickerItem, Screen } from '.'
+import AppText from './AppText'
+import PickerItem from './PickerItem'
+import Screen from './Screen'
 
 export default function AppPicker({
   icon, placeholder, items, selectedItem, onSelectItem
@@ -19,7 +21,7 @@ export default function AppPicker({
             size={22}
             color={colors.medium}
             style={styles.icon} />}
-          <AppText style={styles.text} >{selectedItem ? selectedItem.label : placeholder}</AppText>
+          <AppText style={selectedItem ? styles.text : styles.placeholder} >{selectedItem ? selectedItem.label : placeholder}</AppText>
           {icon && <MaterialCommunityIcons
             name={'chevron-down'}
             size={22}
@@ -59,6 +61,10 @@ const styles = StyleSheet.create({
     marginRight: 10
   },
   text: {
+    flex: 1
+  },
+  placeholder: {
+    color: colors.medium,
     flex: 1
   }
 })
