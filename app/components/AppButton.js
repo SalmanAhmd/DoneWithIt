@@ -9,8 +9,9 @@ export default function AppButton({
   color = 'primary' }) {
   return (
     <TouchableOpacity
+      onPress={onPress}
       style={[styles.button, { backgroundColor: colors[color] }]}>
-      <Text style={styles.text} onPress={onPress}>{title}</Text>
+      <Text style={styles.text} >{title}</Text>
     </TouchableOpacity>
   )
 }

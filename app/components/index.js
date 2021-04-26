@@ -11,6 +11,7 @@ import AppPicker from './AppPicker'
 import PickerItem from './PickerItem'
 import ErrorMessage from './ErrorMessage'
 import AppFormField from './AppFormField'
+import SubmitButton from './SubmitButton'
 
 export {
   AppText,
@@ -25,5 +26,6 @@ export {
   AppPicker,
   PickerItem,
   ErrorMessage,
-  AppFormField
+  AppFormField,
+  SubmitButton
 }
