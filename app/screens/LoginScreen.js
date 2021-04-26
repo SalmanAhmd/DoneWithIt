@@ -22,27 +22,30 @@ export default function LoginScreen() {
       <Formik initialValues={{ email: '', password: '' }}
         onSubmit={values => console.log(values)}
         validationSchema={validationSchema} >
-        {({ handleChange, errors, handleSubmit }) => (
+        {({ handleChange, handleSubmit, setFieldTouched,
+          errors, touched }) => (
           <>
             <AppTextInput
               autoCapitilize='none'
               icon='email'
               autoCorrect={false}
               onChangeText={handleChange('email')}
+              onBlur={() => setFieldTouched('email')}
               keyboardType='email-address'
               placeholder='Email'
               textContentType='emailAddress' />
-            <ErrorMessage error={errors.email} />
+            <ErrorMessage error={errors.email} visible={touched.email} />
 
             <AppTextInput
               autoCapitilize='none'
               autoCorrect={false}
               onChangeText={handleChange('password')}
+              onBlur={() => setFieldTouched('password')}
               icon='lock'
               placeholder='Password'
               secureTextEntry
               textContentType='password' />
-            <ErrorMessage error={errors.password} />
+            <ErrorMessage error={errors.password} visible={touched.password} />
             <AppButton title='Login'
               onPress={handleSubmit} />
           </>
