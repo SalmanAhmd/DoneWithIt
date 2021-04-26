@@ -9,10 +9,10 @@ import Icon from './Icon'
 import AppTextInput from './AppTextInput'
 import AppPicker from './AppPicker'
 import PickerItem from './PickerItem'
-import ErrorMessage from './ErrorMessage'
-import AppFormField from './AppFormField'
-import SubmitButton from './SubmitButton'
-import AppForm from './AppForm'
+import ErrorMessage from './forms/ErrorMessage'
+import AppFormField from './forms/AppFormField'
+import SubmitButton from './forms/SubmitButton'
+import AppForm from './forms/AppForm'
 
 export {
   AppText,
