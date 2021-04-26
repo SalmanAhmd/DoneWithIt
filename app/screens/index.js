@@ -5,6 +5,7 @@ import MessagesScreen from './MessagesScreen'
 import AccountScreen from './AccountScreen'
 import ListingScreen from './ListingScreen'
 import LoginScreen from './LoginScreen'
+import ListEditScreen from './ListEditScreen'
 
 export {
   WelcomeScreen,
@@ -13,5 +14,6 @@ export {
   MessagesScreen,
   AccountScreen,
   ListingScreen,
-  LoginScreen
+  LoginScreen,
+  ListEditScreen
 }

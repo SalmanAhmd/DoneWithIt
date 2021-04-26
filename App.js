@@ -7,7 +7,8 @@ import {
   // MessagesScreen,
   // AccountScreen
   // ListingScreen
-  LoginScreen
+  // LoginScreen
+  ListEditScreen
 } from './app/screens';
 
 import {
@@ -23,7 +24,7 @@ export default function App() {
 
   return (
     <>
-      <LoginScreen />
+      <ListEditScreen />
     </>
   );
 }

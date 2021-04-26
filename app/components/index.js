@@ -13,6 +13,7 @@ import ErrorMessage from './forms/ErrorMessage'
 import AppFormField from './forms/AppFormField'
 import SubmitButton from './forms/SubmitButton'
 import AppForm from './forms/AppForm'
+import AppFormPicker from './forms/AppFormPicker'
 
 export {
   AppText,
@@ -29,5 +30,6 @@ export {
   ErrorMessage,
   AppFormField,
   SubmitButton,
-  AppForm
+  AppForm,
+  AppFormPicker
 }
