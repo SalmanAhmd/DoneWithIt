@@ -3,7 +3,9 @@ import { StyleSheet, View, TouchableWithoutFeedback, Modal, Button, FlatList } f
 import { MaterialCommunityIcons } from '@expo/vector-icons'
 
 import colors from '../config/colors'
-import { AppText, PickerItem, Screen } from '.'
+import AppText from './AppText'
+import PickerItem from './PickerItem'
+import Screen from './Screen'
 
 export default function AppPicker({
   icon, placeholder, items, selectedItem, onSelectItem
