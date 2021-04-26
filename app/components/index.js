@@ -9,6 +9,7 @@ import Icon from './Icon'
 import AppTextInput from './AppTextInput'
 import AppPicker from './AppPicker'
 import PickerItem from './PickerItem'
+import ErrorMessage from './ErrorMessage'
 
 export {
   AppText,
@@ -21,5 +22,6 @@ export {
   Icon,
   AppTextInput,
   AppPicker,
-  PickerItem
+  PickerItem,
+  ErrorMessage
 }
