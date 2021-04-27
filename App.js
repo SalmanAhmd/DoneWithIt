@@ -5,7 +5,7 @@ import {
   // ViewImageScreen,
   // ListingDetail,
   // MessagesScreen,
-  // AccountScreen
+  // AccountScreen,
   // ListingScreen
   // LoginScreen
   ListEditScreen
@@ -14,16 +14,20 @@ import {
 import {
   // AppText,
   // AppTextInput,
-  // Screen,
+  // Screen,z
   // AppPicker,
   // Icon,
-  // ListItem
+  // ListItem, Screen
 } from './app/components'
 
 export default function App() {
 
   return (
     <>
+      {/* <ListingDetail /> */}
+      {/* <MessagesScreen /> */}
+      {/* <AccountScreen /> */}
+      {/* <ListingScreen /> */}
       <ListEditScreen />
     </>
   );

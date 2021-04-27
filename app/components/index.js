@@ -14,6 +14,8 @@ import AppFormField from './forms/AppFormField'
 import SubmitButton from './forms/SubmitButton'
 import AppForm from './forms/AppForm'
 import AppFormPicker from './forms/AppFormPicker'
+import CategoryPickerItem from './CategoryPickerItem'
+
 
 export {
   AppText,
@@ -31,5 +33,6 @@ export {
   AppFormField,
   SubmitButton,
   AppForm,
-  AppFormPicker
+  AppFormPicker,
+  CategoryPickerItem
 }
