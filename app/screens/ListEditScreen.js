@@ -33,10 +33,12 @@ export default function ListEditScreen() {
         <AppFormField maxLength={255} name='title' placeholder='Title' />
 
         <AppFormField keyboardtype='numeric'
-          name='price' placeholder='Price' />
+          name='price' placeholder='Price'
+          width={180} />
 
         <AppFormPicker items={categories}
-          name='category' placeholder='Category' />
+          name='category' placeholder='Category'
+          width={'50%'} />
 
         <AppFormField maxLength={255}
           multiline numberOfLines={3}
