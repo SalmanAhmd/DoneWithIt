@@ -3,12 +3,12 @@ import React from 'react';
 import {
   // WelcomeScreen,
   // ViewImageScreen,
-  ListingDetail,
-  MessagesScreen,
-  AccountScreen,
-  ListingScreen
+  // ListingDetail,
+  // MessagesScreen,
+  // AccountScreen,
+  // ListingScreen
   // LoginScreen
-  // ListEditScreen
+  ListEditScreen
 } from './app/screens';
 
 import {
@@ -25,9 +25,10 @@ export default function App() {
   return (
     <>
       {/* <ListingDetail /> */}
-      <MessagesScreen />
+      {/* <MessagesScreen /> */}
       {/* <AccountScreen /> */}
       {/* <ListingScreen /> */}
+      <ListEditScreen />
     </>
   );
 }
