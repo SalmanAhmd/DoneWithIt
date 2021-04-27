@@ -5,9 +5,10 @@ import defaultStyles from '../config/styles'
 
 export default function AppText({
   children,
-  style = {} }) {
+  style = {},
+  ...rest }) {
   return (
-    <Text style={[defaultStyles.text, style]}>{children}</Text>
+    <Text style={[defaultStyles.text, style]} {...rest}>{children}</Text>
   )
 }
 

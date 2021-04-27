@@ -6,8 +6,8 @@ import { ListItem, Screen, ListItemSeparator, ListItemDeleteAction } from '../co
 const initialMessages = [
   {
     id: 1,
-    title: 'T1',
-    description: 'D1',
+    title: 'T1 D1 skbskbsks khbsk skshbskbskbsksb sksbks sskhbss skhbs D1 skbskbsks khbsk skshbskbskbsksb sksbks sskhbss skhbs D1 skbskbsks khbsk skshbskbskbsksb sksbks sskhbss skhbs',
+    description: 'D1 skbskbsks khbsk skshbskbskbsksb sksbks sskhbss skhbsskbskbsks khbsk skshbskbskbsksb sksbks sskhbssskbskbsks khbsk skshbskbskbsksb sksbks sskhbssskbskbsks khbsk skshbskbskbsksb sksbks sskhbss',
     image: require('../assets/profile.jpg')
   },
   {

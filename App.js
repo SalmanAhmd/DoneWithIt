@@ -3,28 +3,31 @@ import React from 'react';
 import {
   // WelcomeScreen,
   // ViewImageScreen,
-  // ListingDetail,
-  // MessagesScreen,
-  // AccountScreen
-  // ListingScreen
+  ListingDetail,
+  MessagesScreen,
+  AccountScreen,
+  ListingScreen
   // LoginScreen
-  ListEditScreen
+  // ListEditScreen
 } from './app/screens';
 
 import {
   // AppText,
   // AppTextInput,
-  // Screen,
+  // Screen,z
   // AppPicker,
   // Icon,
-  // ListItem
+  // ListItem, Screen
 } from './app/components'
 
 export default function App() {
 
   return (
     <>
-      <ListItem />
+      {/* <ListingDetail /> */}
+      <MessagesScreen />
+      {/* <AccountScreen /> */}
+      {/* <ListingScreen /> */}
     </>
   );
 }
