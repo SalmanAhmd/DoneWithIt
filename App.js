@@ -1,34 +1,24 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import * as ImagePicker from 'expo-image-picker'
+// import * as Permission from 'expo-permissions'
 
-import {
-  // WelcomeScreen,
-  // ViewImageScreen,
-  // ListingDetail,
-  // MessagesScreen,
-  // AccountScreen,
-  // ListingScreen
-  // LoginScreen
-  ListEditScreen
-} from './app/screens';
-
-import {
-  // Text,
-  // TextInput,
-  // Screen,z
-  // Picker,
-  // Icon,
-  // ListItem, Screen
-} from './app/components'
+import { Screen } from './app/components'
 
 export default function App() {
 
+  const requestPermission = async () => {
+    const { granted } = await ImagePicker.requestMediaLibraryPermissionsAsync()
+    if (!granted)
+      alert("You need to enable permission")
+  }
+
+  useEffect(() => {
+    requestPermission();
+  }, [])
+
   return (
-    <>
-      {/* <ListingDetail /> */}
-      {/* <MessagesScreen /> */}
-      {/* <AccountScreen /> */}
-      {/* <ListingScreen /> */}
-      <ListEditScreen />
-    </>
+    <Screen>
+
+    </Screen>
   );
 }
