@@ -2,7 +2,7 @@ import React from 'react'
 import * as yup from 'yup'
 import { StyleSheet } from 'react-native'
 
-import { SubmitButton, AppFormField, Screen, AppForm, AppFormPicker, CategoryPickerItem } from '../components'
+import { SubmitButton, FormField, Screen, Form, FormPicker, CategoryPickerItem } from '../components'
 
 const validationSchema = yup.object().shape({
   title: yup.string().required().min(1).label('Title'),
@@ -21,7 +21,7 @@ const categories = [
 export default function ListEditScreen() {
   return (
     <Screen style={styles.container}>
-      <AppForm initialValues={{
+      <Form initialValues={{
         title: '',
         price: '',
         description: '',
@@ -30,25 +30,25 @@ export default function ListEditScreen() {
         onSubmit={values => console.log(values)}
         validationSchema={validationSchema} >
 
-        <AppFormField maxLength={255} name='title' placeholder='Title' />
+        <FormField maxLength={255} name='title' placeholder='Title' />
 
-        <AppFormField keyboardtype='numeric'
+        <FormField keyboardtype='numeric'
           name='price' placeholder='Price'
           width={180} />
 
-        <AppFormPicker items={categories}
+        <FormPicker items={categories}
           name='category' placeholder='Category'
           width={'50%'}
           numberOfColumns={3}
           PickertItemComponent={CategoryPickerItem}
            />
 
-        <AppFormField maxLength={255}
+        <FormField maxLength={255}
           multiline numberOfLines={3}
           name='description' placeholder='Description' />
 
         <SubmitButton title='Submit' />
-      </AppForm>
+      </Form>
     </Screen>
   )
 }

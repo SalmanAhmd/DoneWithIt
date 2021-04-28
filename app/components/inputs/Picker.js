@@ -2,10 +2,10 @@ import React, { useState } from 'react'
 import { StyleSheet, View, TouchableWithoutFeedback, Modal, Button, FlatList } from 'react-native'
 import { MaterialCommunityIcons } from '@expo/vector-icons'
 
-import colors from '../config/colors'
-import AppText from './AppText'
+import colors from '../../config/colors'
+import Text from '../Text'
 import PickerItem from './PickerItem'
-import Screen from './Screen'
+import Screen from '../Screen'
 
 export default function AppPicker({
   icon, placeholder, items, selectedItem,
@@ -23,7 +23,7 @@ export default function AppPicker({
             size={22}
             color={colors.medium}
             style={styles.icon} />}
-          <AppText style={selectedItem ? styles.text : styles.placeholder} >{selectedItem ? selectedItem.label : placeholder}</AppText>
+          <Text style={selectedItem ? styles.text : styles.placeholder} >{selectedItem ? selectedItem.label : placeholder}</Text>
           <MaterialCommunityIcons
             name={'chevron-down'}
             size={22}
