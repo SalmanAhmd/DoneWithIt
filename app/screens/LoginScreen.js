@@ -2,7 +2,7 @@ import React from 'react'
 import { Image, StyleSheet } from 'react-native'
 import * as yup from 'yup'
 
-import { SubmitButton, AppFormField, Screen, AppForm } from '../components'
+import { SubmitButton, FormField, Screen, Form } from '../components'
 
 const validationSchema = yup.object().shape({
   email: yup.string().required().email().label('Email'),
@@ -18,11 +18,11 @@ export default function LoginScreen() {
         uri: 'https://1000logos.net/wp-content/uploads/2018/05/Gmail-logo.png'
       }} />
 
-      <AppForm initialValues={{ email: '', password: '' }}
+      <Form initialValues={{ email: '', password: '' }}
         onSubmit={values => console.log(values)}
         validationSchema={validationSchema}>
 
-        <AppFormField
+        <FormField
           autoCapitilize='none'
           autoCorrect={false}
           keyboardType='email-address'
@@ -31,7 +31,7 @@ export default function LoginScreen() {
           placeholder='Email'
           textContentType='emailAddress' />
 
-        <AppFormField
+        <FormField
           autoCapitilize='none'
           autoCorrect={false}
           icon='lock'
@@ -42,7 +42,7 @@ export default function LoginScreen() {
 
         <SubmitButton title='Login' />
 
-      </AppForm>
+      </Form>
     </Screen>
   )
 }

@@ -12,10 +12,10 @@ import {
 } from './app/screens';
 
 import {
-  // AppText,
-  // AppTextInput,
+  // Text,
+  // TextInput,
   // Screen,z
-  // AppPicker,
+  // Picker,
   // Icon,
   // ListItem, Screen
 } from './app/components'
