@@ -2,6 +2,7 @@ import Text from './Text'
 import Card from './Card'
 import Screen from './Screen'
 import Icon from './Icon'
+import ImageInput from './ImageInput';
 
 import ListItem from './lists/ListItem'
 import ListItemSeparator from './lists/ListItemSeparator'
@@ -22,20 +23,24 @@ import FormPicker from './forms/FormPicker'
 
 export {
   Text,
-  Button,
   Card,
-  ListItem,
   Screen,
+  Icon,
+  ImageInput,
+
+  ListItem,
   ListItemSeparator,
   ListItemDeleteAction,
-  Icon,
+
+  Button,
   TextInput,
   Picker,
   PickerItem,
+  CategoryPickerItem,
+
   ErrorMessage,
   FormField,
   SubmitButton,
   Form,
-  FormPicker,
-  CategoryPickerItem
+  FormPicker
 }

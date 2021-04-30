@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import * as ImagePicker from 'expo-image-picker'
 // import * as Permission from 'expo-permissions'
 
-import { Button, Screen } from './app/components'
+import { Button, ImageInput, Screen } from './app/components'
 import { Image } from 'react-native';
 
 export default function App() {
@@ -34,6 +34,7 @@ export default function App() {
     <Screen>
       <Button title='Select Image' onPress={selectImage} />
       <Image source={{ uri: imageUri }} style={{ width: 200, height: 200 }} />
+      <ImageInput imageUri={imageUri} />
     </Screen>
   );
 }
