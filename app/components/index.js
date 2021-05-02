@@ -3,6 +3,7 @@ import Card from './Card'
 import Screen from './Screen'
 import Icon from './Icon'
 import ImageInput from './ImageInput';
+import ImageInputList from './ImageInputList';
 
 import ListItem from './lists/ListItem'
 import ListItemSeparator from './lists/ListItemSeparator'
@@ -27,6 +28,7 @@ export {
   Screen,
   Icon,
   ImageInput,
+  ImageInputList,
 
   ListItem,
   ListItemSeparator,
