@@ -20,7 +20,7 @@ import FormField from './forms/FormField'
 import SubmitButton from './forms/SubmitButton'
 import Form from './forms/Form'
 import FormPicker from './forms/FormPicker'
-
+import FormImagePicker from './forms/FormImagePicker'
 
 export {
   Text,
@@ -44,5 +44,6 @@ export {
   FormField,
   SubmitButton,
   Form,
-  FormPicker
+  FormPicker,
+  FormImagePicker
 }
