@@ -2,13 +2,18 @@ import React from 'react'
 import * as yup from 'yup'
 import { StyleSheet } from 'react-native'
 
-import { SubmitButton, FormField, Screen, Form, FormPicker, CategoryPickerItem } from '../components'
+import {
+  SubmitButton, FormField, Screen, Form,
+  FormPicker, CategoryPickerItem, FormImagePicker
+} from '../components'
+import { useLocation } from '../hooks';
 
 const validationSchema = yup.object().shape({
   title: yup.string().required().min(1).label('Title'),
   price: yup.string().required().min(1).max(100000).label('Price'),
   description: yup.string().label('Description'),
   category: yup.object().required().nullable().label('Category'),
+  images: yup.array().min(1, 'Please select at least one image.')
 })
 
 const categories = [
@@ -19,16 +24,22 @@ const categories = [
 
 
 export default function ListEditScreen() {
+
+  const location = useLocation()
+
   return (
     <Screen style={styles.container}>
       <Form initialValues={{
         title: '',
         price: '',
         description: '',
-        category: null
+        category: null,
+        images: []
       }}
-        onSubmit={values => console.log(values)}
+        onSubmit={values => console.log(values, location)}
         validationSchema={validationSchema} >
+
+        <FormImagePicker name='images' />
 
         <FormField maxLength={255} name='title' placeholder='Title' />
 
@@ -41,7 +52,7 @@ export default function ListEditScreen() {
           width={'50%'}
           numberOfColumns={3}
           PickertItemComponent={CategoryPickerItem}
-           />
+        />
 
         <FormField maxLength={255}
           multiline numberOfLines={3}
